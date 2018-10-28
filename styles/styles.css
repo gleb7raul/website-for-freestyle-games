@@ -1,0 +1,353 @@
+@font-face {
+    font-family: YesevaOne; 
+    src: url(../fonts/yeseva-one/YesevaOne-Regular_v2.otf); 
+}
+@font-face {
+    font-family: GentiumBasicBold; 
+    src: url(../fonts/Gentium-Basic/GenBkBasB.ttf); 
+}
+@font-face {
+    font-family: LatoRegular; 
+    src: url(../fonts/lato/Lato-Regular.ttf); 
+}
+
+@font-face {
+    font-family: OpenSansBold; 
+    src: url(../fonts/open-sans/OpenSans-Bold.ttf); 
+}
+@font-face {
+    font-family: OpenSansRegular; 
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf); 
+}
+@font-face {
+    font-family: OpenSansItalic; 
+    src: url(../fonts/open-sans/OpenSans-Italic.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   margin: 0 auto;
+   height: 100%;
+}
+
+html {
+    width: 100%; 
+    height: 100%;
+} 
+
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    background: black;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:reverse;
+        -ms-flex-direction:row-reverse;
+            flex-direction:row-reverse; 
+    padding: 1%;
+}
+
+.social-networks {
+    padding: 0 2.5%;
+    font-size: 20px;
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    background: black; 
+    -webkit-box-pack: end; 
+        -ms-flex-pack: end; 
+            justify-content: flex-end;
+    position: relative;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;
+    padding-right: 108px;
+}
+
+.logo {
+   -webkit-box-flex: 0.5;
+       -ms-flex-positive: 0.5;
+           flex-grow: 0.5;
+   position: absolute;
+   left: 1px;
+   bottom: -89px;
+}
+
+ul li {
+    padding: 20px 8px 35px 8px;
+    color: red;
+ }
+
+
+ .contacts {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 5px 10px 20px 10px;
+    font-family: OpenSansItalic, Arial, Helvetica, sans-serif;
+ }
+
+
+ ul {
+    list-style: none; 
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ a.list {
+    color:yellow;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: OpenSansBold, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+ a.list:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+    -webkit-text-decoration-color: yellow;
+            text-decoration-color: yellow;
+    
+}
+
+ iframe {
+    width: 100%;
+    height: 100%;
+ }
+
+ .relation {
+    position: relative;
+ }
+ 
+ .relation_ration {
+    padding-top: 56.25%;
+    height: 0;
+ }
+
+ .relation_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ }
+
+ i {
+    color: white;
+}
+
+.news1 {
+   width: 100%;
+}
+
+.services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+ }
+
+ .services, span {
+    margin: 10px;
+ }
+
+
+ .first:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.7s linear 0.01s;
+    transition: -webkit-transform 0.7s linear 0.01s;
+    -o-transition: transform 0.7s linear 0.01s;
+    transition: transform 0.7s linear 0.01s;
+    transition: transform 0.7s linear 0.01s, -webkit-transform 0.7s linear 0.01s;
+ }
+
+ .first {
+    position: relative;
+    overflow: hidden;
+}
+
+
+ .first img {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+ .descr {
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: all .9s;
+    -o-transition: all .9s;
+    transition: all .9s;
+    top:100%;
+    font-family: YesevaOne, Arial, Helvetica, sans-serif;
+}
+
+.first:hover .descr {
+    opacity: 1;
+    top:0;
+ }
+
+ .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+ }
+
+ .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(235, 235, 235, 0.3);
+ }
+
+ .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+ }
+
+ .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,.3);
+    color: white;
+ }
+
+ .numbertext {
+    color: #f2f2f2;
+    font-size: 0px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .partners div span {
+    text-align: center;
+  }
+
+  .sponsors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .ourpartners {
+    margin: 25px;
+  }
+
+  h2, h4 {
+      padding: 20px;
+      text-align: center;
+      font-family: OpenSansItalic, Arial, Helvetica, sans-serif;
+      letter-spacing: 1px;
+  }
+
+.footer-first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color:#EBE9E9;
+    padding: 25px;
+    font-family: OpenSansItalic, Arial, Helvetica, sans-serif;
+}
+
+.footer-end {
+    background-color:#EBE9E9;
+}
+
+.oursocial i {
+    color: black;
+}
+
+.the-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer-second {
+    background-color: black;
+    height: 25px;
+}
+
+ 
+
+ 
+
+
